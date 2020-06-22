@@ -1,9 +1,11 @@
 #pragma once
 #include "Quest.h"
 #include <ctime>
+#include <Windows.h>
 class Game
 {
-	static const char filler = '#';
+	static const size_t MISTAKE = 5;//кількість дозволених помилок(якщо більше то програш)
+	static const char FILLER = '#';
 	QuestList list; // default ctor, заповнення питаннями вектору
 	Quest quest;
 	string userWord;  // шаблон слова, спочатку заповнити певним символом
